@@ -15,7 +15,7 @@ input {
   position: relative;
   width: 100%;
   /* background-color: #fff; */
-  background-color: #fbf5ef;
+  background-color: #D7E1EC;
 
   min-height: 100vh;
   overflow: hidden;
@@ -109,9 +109,105 @@ form.sign-in-form {
   font-size: 1rem;
 }
 
+
+
+
+
+/* jsdkfhkjsdhfjdhfjhjdshfjhjshjdhfjhdjhfhdjjfhjdhfhjdhfdf------------- */
+
 .social-media {
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); */
+
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e95950;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+  background: #333;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+  color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+  color: #ff0000;
 }
 
 .social-icon {
@@ -152,6 +248,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -175,7 +272,7 @@ form.sign-in-form {
 
   background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
   /* background: linear-gradient(to right, #0575e6, #021b79); */
-  
+
 
 
   transition: 1.8s ease-in-out;
@@ -284,6 +381,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -390,9 +488,11 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }
@@ -406,4 +506,24 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
+}
+
+
+@media (max-width: 500px) {
+  .wrapper .button:nth-child(2) {
+    display: none;
+
+  }
+
+  .wrapper .button:nth-child(3) {
+    display: none;
+
+  }
+
+  .wrapper .button:nth-child(5) {
+    display: none;
+
+  }
+
+
 }
